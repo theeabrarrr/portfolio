@@ -5,13 +5,13 @@ import { ExternalLink, Github, ArrowUpRight } from 'lucide-react';
 const projects = [
   {
     id: 1,
-    title: 'E-Commerce Platform',
-    category: 'Web Development',
-    tech: ['React', 'Node.js', 'MongoDB'],
-    description: 'Full-stack e-commerce solution with real-time inventory management and seamless checkout experience.',
-    image: '/images/project-ecommerce.jpg',
-    liveUrl: '#',
-    githubUrl: '#',
+    title: 'Aura Portfolio',
+    category: 'Animated Portfolio',
+    tech: ['React', 'Three.js', 'Framer Motion', 'Shadcn UI'],
+    description: 'A high-performance, immersive developer portfolio featuring 3D interactive elements, smooth page transitions, and a reactive neon aesthetic.',
+    image: '/images/project-portfolio.png',
+    liveUrl: 'https://abrar-dev.vercel.app/',
+    githubUrl: 'https://github.com/theeabrarrr/portfolio',
   },
   {
     id: 2,
@@ -36,7 +36,7 @@ const projects = [
   {
     id: 4,
     title: 'Multi-tenant LPG Distribution SaaS',
-    category: 'Web Development',
+    category: 'Web Application',
     tech: ['Next.js 14', 'TypeScript', 'Supabase', 'PostgreSQL', 'Tailwind CSS', 'Shadcn UI'],
     description: 'A powerful SaaS platform designed to automate LPG cylinder distribution. Features include real-time inventory tracking, multi-tenant architecture for different distributors, driver delivery apps, and automated financial reconciliation. Built with a focus on security using Row Level Security (RLS) and high-performance data handling.',
     image: '/images/project-lpg.png',
@@ -65,7 +65,7 @@ const projects = [
   },
 ];
 
-const categories = ['All', 'Web Development', 'UI/UX Design', 'Creative Coding', 'App Design', 'Branding'];
+const categories = ['All', 'Web Application', 'UI/UX Design', 'Animated Portfolio', 'HR & Fleet Management', 'Branding'];
 
 function ProjectCard({ project, index }: { project: typeof projects[0]; index: number }) {
   const ref = useRef<HTMLDivElement>(null);
