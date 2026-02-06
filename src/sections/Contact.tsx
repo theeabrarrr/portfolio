@@ -26,14 +26,30 @@ export default function Contact() {
     message: '',
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Simulate form submission
-    setIsSubmitted(true);
-    setTimeout(() => {
-      setIsSubmitted(false);
-      setFormData({ name: '', email: '', subject: '', message: '' });
-    }, 3000);
+
+    try {
+      const response = await fetch("https://formspree.io/f/mqedzvdv", {
+        method: "POST",
+        body: JSON.stringify(formData),
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+        },
+      });
+      if (response.ok) {
+        setIsSubmitted(true);
+        setTimeout(() => {
+          setIsSubmitted(false);
+          setFormData({ name: '', email: '', subject: '', message: '' });
+        }, 3000);
+      } else {
+        alert("Oops! Something went wrong. Please try again.");
+      }
+    } catch (error) {
+      alert("Error sending message.");
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
