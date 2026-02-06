@@ -9,10 +9,10 @@ const contactInfo = [
 ];
 
 const socialLinks = [
-  { icon: Github, label: 'GitHub', href: 'https://github.com' },
-  { icon: Linkedin, label: 'LinkedIn', href: 'https://linkedin.com' },
-  { icon: Twitter, label: 'Twitter', href: 'https://twitter.com' },
-  { icon: Dribbble, label: 'Dribbble', href: 'https://dribbble.com' },
+  { icon: Github, label: 'GitHub', href: 'https://github.com/theeabrarrr' },
+  { icon: Linkedin, label: 'LinkedIn', href: 'https://linkedin.com/in/muhammad-abrar-64608437a/' },
+  { icon: Twitter, label: 'Twitter', href: 'https://x.com/croabrarrr' },
+  { icon: Dribbble, label: 'Dribbble', href: 'https://dribbble.com/croabrarrr' },
 ];
 
 export default function Contact() {
