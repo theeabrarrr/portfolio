@@ -25,23 +25,23 @@ const projects = [
   },
   {
     id: 3,
-    title: '3D Portfolio',
-    category: 'Creative Coding',
-    tech: ['Three.js', 'WebGL', 'GSAP'],
-    description: 'Immersive 3D portfolio experience with interactive elements and smooth animations.',
-    image: '/images/project-3d.jpg',
-    liveUrl: '#',
-    githubUrl: '#',
+    title: 'K2 Attentiv',
+    category: 'HR & Fleet Management',
+    tech: ['React', 'Supabase', 'Tailwind', 'Recharts'],
+    description: 'A dual-purpose management system for tracking Employee Attendance and Fleet Fuel consumption with real-time analytics.',
+    image: '/images/project-k2attentiv.png',
+    liveUrl: 'https://k2-attentiv.lovable.app/',
+    githubUrl: 'https://github.com/theeabrarrr/k2-attentiv',
   },
   {
     id: 4,
-    title: 'Mobile Banking App',
-    category: 'App Design',
-    tech: ['React Native', 'Firebase'],
-    description: 'Secure and intuitive mobile banking experience with biometric authentication.',
-    image: '/images/project-banking.jpg',
+    title: 'Multi-tenant LPG Distribution SaaS',
+    category: 'Web Development',
+    tech: ['Next.js 14', 'TypeScript', 'Supabase', 'PostgreSQL', 'Tailwind CSS', 'Shadcn UI'],
+    description: 'A powerful SaaS platform designed to automate LPG cylinder distribution. Features include real-time inventory tracking, multi-tenant architecture for different distributors, driver delivery apps, and automated financial reconciliation. Built with a focus on security using Row Level Security (RLS) and high-performance data handling.',
+    image: '/images/project-lpg.png',
     liveUrl: '#',
-    githubUrl: '#',
+    githubUrl: 'https://github.com/theeabrarrr/LPG-Connect',
   },
   {
     id: 5,
@@ -77,8 +77,8 @@ function ProjectCard({ project, index }: { project: typeof projects[0]; index: n
       ref={ref}
       initial={{ opacity: 0, y: 50 }}
       animate={isInView ? { opacity: 1, y: 0 } : {}}
-      transition={{ 
-        duration: 0.7, 
+      transition={{
+        duration: 0.7,
         delay: index * 0.1,
         ease: [0.16, 1, 0.3, 1]
       }}
@@ -114,7 +114,7 @@ function ProjectCard({ project, index }: { project: typeof projects[0]; index: n
               className="w-full h-full object-cover"
             />
           </motion.div>
-          
+
           {/* Overlay */}
           <motion.div
             initial={{ opacity: 0 }}
@@ -164,7 +164,7 @@ function ProjectCard({ project, index }: { project: typeof projects[0]; index: n
           >
             {project.title}
           </motion.h3>
-          
+
           <motion.p
             animate={{ y: isHovered ? -5 : 0 }}
             transition={{ duration: 0.3, delay: 0.05 }}
@@ -263,11 +263,10 @@ export default function Projects() {
             <button
               key={category}
               onClick={() => setActiveCategory(category)}
-              className={`px-4 py-2 rounded-full text-sm transition-all duration-300 ${
-                activeCategory === category
-                  ? 'bg-lime text-black'
-                  : 'bg-white/5 text-white/60 hover:bg-white/10 hover:text-white'
-              }`}
+              className={`px-4 py-2 rounded-full text-sm transition-all duration-300 ${activeCategory === category
+                ? 'bg-lime text-black'
+                : 'bg-white/5 text-white/60 hover:bg-white/10 hover:text-white'
+                }`}
             >
               {category}
             </button>
@@ -275,7 +274,7 @@ export default function Projects() {
         </motion.div>
 
         {/* Projects Grid */}
-        <motion.div 
+        <motion.div
           layout
           className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"
         >
