@@ -11,10 +11,10 @@ const navLinks = [
 ];
 
 const socialLinks = [
-  { icon: Github, href: 'https://github.com', label: 'GitHub' },
-  { icon: Linkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
-  { icon: Twitter, href: 'https://twitter.com', label: 'Twitter' },
-  { icon: Dribbble, href: 'https://dribbble.com', label: 'Dribbble' },
+  { icon: Github, href: 'https://github.com/theeabrarrr', label: 'GitHub' },
+  { icon: Linkedin, href: 'https://www.linkedin.com/in/muhammad-abrar-64608437a/', label: 'LinkedIn' },
+  { icon: Twitter, href: 'https://x.com/croabrarrr', label: 'Twitter' },
+  { icon: Dribbble, href: 'https://dribbble.com/croabrarrr', label: 'Dribbble' },
 ];
 
 export default function Footer() {
