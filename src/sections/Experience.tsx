@@ -5,30 +5,39 @@ import { Briefcase, MapPin, Calendar } from 'lucide-react';
 const experiences = [
   {
     id: 1,
-    title: 'Customer Relations Officer',
-    company: 'DWP Group',
-    period: '2024 - Present',
-    location: 'Karachi, Pakistan',
-    description: 'Managing end-to-end customer lifecycles, resolving complex service grievances for home appliances, and coordinating between technical teams and clients to ensure high satisfaction and retention rates.',
-    skills: ['CRM', 'Conflict Resolution', 'Client Relations', 'Communication'],
+    title: 'Founder & Managing Director',
+    company: 'Tijarah Garments',
+    period: '2 Years',
+    location: 'Pakistan',
+    description: 'Established and scaled dual manufacturing units equipped with 15 industrial machines for mass production. Spearheaded end-to-end production cycles for Pakistan’s top-tier fashion labels, ensuring high quality control and managing B2B relations.',
+    skills: ['Operations', 'B2B', 'Sourcing', 'Management'],
   },
   {
     id: 2,
-    title: 'UI/UX Designer & Developer',
-    company: 'GFX House',
+    title: 'Lead Generation & Sales Specialist',
+    company: 'Graphix House (GFX)',
     period: '2022 - 2024',
-    location: 'Karachi, Pakistan',
-    description: 'Designed and developed websites and applications for diverse clients across fintech, healthcare, and e-commerce sectors. Delivered 50+ successful projects.',
-    skills: ['Figma', 'Adobe Photoshop', 'React', 'Node.js', 'Client Relations'],
+    location: 'Remote / Global',
+    description: 'Identified and engaged high-potential branding leads within the global streaming community on Twitch. Conducted technical consultations to identify custom branding needs and successfully converted leads into high-ticket sales.',
+    skills: ['Sales', 'Consultation', 'Lead Generation', 'Conversion'],
   },
   {
     id: 3,
-    title: 'Junior Web Developer',
-    company: 'Software One',
-    period: '2020 - 2022',
-    location: 'Karachi, Pakistan',
-    description: 'Built responsive websites and implemented frontend features for a fast-growing tech startup. Collaborated closely with design team to bring concepts to life.',
-    skills: ['JavaScript', 'CSS', 'HTML', 'Git'],
+    title: 'Entrepreneur / Owner',
+    company: 'Bike Spare Parts Business',
+    period: '1.5 Years',
+    location: 'Pakistan',
+    description: 'Directed inventory management and retail operations for a specialized automotive spare parts business. Optimized supply chain logistics to ensure consistent stock availability and built a loyal customer base.',
+    skills: ['Inventory', 'Retail', 'Logistics', 'Bookkeeping'],
+  },
+  {
+    id: 4,
+    title: 'Customer Relations Officer (CRO)',
+    company: 'DWP Group',
+    period: 'Previous',
+    location: 'Pakistan',
+    description: 'Represented premium international brands (Gree & EcoStar). Coordinated complex technical support workflows between customers and specialized service departments, streamlining communication protocols.',
+    skills: ['CRM', 'Client Relations', 'Conflict Resolution', 'Support'],
   },
 ];
 
@@ -231,15 +240,15 @@ export default function Experience() {
           <div className="p-6 bg-white/[0.02] border border-white/10 rounded-xl">
             <h4 className="text-lg font-semibold text-white mb-2">Education</h4>
             <p className="text-white/60 text-sm">
-              B.S. Computer Science<br />
-              Stanford University, 2017
+              DAE in Software Engineering<br />
+              Jinnah Polytechnic Institute
             </p>
           </div>
           <div className="p-6 bg-white/[0.02] border border-white/10 rounded-xl">
             <h4 className="text-lg font-semibold text-white mb-2">Certifications</h4>
             <p className="text-white/60 text-sm">
-              AWS Solutions Architect<br />
-              Google UX Design Professional
+              3-Year Full Stack Diploma (Aptech)<br />
+              Intermediate (Sindh Board)
             </p>
           </div>
         </motion.div>

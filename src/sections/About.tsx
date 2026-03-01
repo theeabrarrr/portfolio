@@ -2,10 +2,10 @@ import { useRef, useEffect, useState } from 'react';
 import { motion, useInView, useScroll, useTransform } from 'framer-motion';
 
 const stats = [
-  { value: 150, suffix: '+', label: 'Projects Completed' },
-  { value: 8, suffix: '+', label: 'Years Experience' },
-  { value: 50, suffix: '+', label: 'Happy Clients' },
-  { value: 12, suffix: '', label: 'Awards Won' },
+  { value: 15, suffix: '+', label: 'Projects Built' },
+  { value: 6, suffix: '+', label: 'Years Experience' },
+  { value: 95, suffix: ' WPM', label: 'Typing Speed' },
+  { value: 100, suffix: '%', label: 'Commitment' },
 ];
 
 function AnimatedCounter({ value, suffix }: { value: number; suffix: string }) {
@@ -97,8 +97,8 @@ export default function About() {
                 className="relative w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96 mx-auto"
               >
                 <img
-                  src="/images/about-portrait.png"
-                  alt="About Alex Morgan"
+                  src="/images/hero-portrait.jpg"
+                  alt="Muhammad Abrar"
                   className="w-full h-full object-cover rounded-full"
                 />
                 {/* Border ring */}
@@ -156,8 +156,8 @@ export default function About() {
                 transition={{ duration: 0.6, delay: 0.4 }}
                 className="text-lg text-white/80 leading-relaxed"
               >
-                With over 8 years of experience in digital design and development,
-                I've had the privilege of working with startups, agencies, and Fortune 500 companies.
+                With a strong foundation in Full-Stack Development and Software Engineering,
+                I specialize in building scalable SaaS solutions using Next.js 15/16, Vite, and Supabase.
               </motion.p>
 
               <motion.p
@@ -166,9 +166,9 @@ export default function About() {
                 transition={{ duration: 0.6, delay: 0.5 }}
                 className="text-base text-white/60 leading-relaxed"
               >
-                My approach combines strategic thinking with creative execution to deliver
-                results that exceed expectations. I believe in the power of clean code,
-                thoughtful design, and user-centered solutions.
+                Beyond coding, I am a seasoned entrepreneur who has successfully managed manufacturing
+                operations and scaled retail businesses. My background allows me to
+                bridge the gap between technical development and business growth.
               </motion.p>
 
               <motion.p
@@ -177,8 +177,9 @@ export default function About() {
                 transition={{ duration: 0.6, delay: 0.6 }}
                 className="text-base text-white/60 leading-relaxed"
               >
-                When I'm not coding or designing, you'll find me exploring new technologies,
-                contributing to open-source projects, or sharing knowledge with the community.
+                When I'm not coding or designing, you'll find me applying ethical hacking
+                skills on Kali Linux, optimizing supply chain logistics, or exploring advanced
+                AI-assisted development with tools like Cursor.
               </motion.p>
 
               {/* Skills tags */}
@@ -188,7 +189,7 @@ export default function About() {
                 transition={{ duration: 0.6, delay: 0.7 }}
                 className="flex flex-wrap gap-2 pt-4"
               >
-                {['React', 'TypeScript', 'Node.js', 'UI/UX', 'Three.js', 'AWS'].map((skill, index) => (
+                {['Next.js', 'TypeScript', 'Supabase', 'Python', 'Tailwind CSS', 'Kali Linux'].map((skill, index) => (
                   <motion.span
                     key={skill}
                     initial={{ opacity: 0, scale: 0.8 }}

@@ -1,27 +1,27 @@
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { 
-  Code2, 
-  Palette, 
-  Server, 
-  Cloud, 
-  Layers, 
+import {
+  Code2,
+  Palette,
+  Server,
+  Cloud,
+  Layers,
   Box,
   Database,
   Figma,
 } from 'lucide-react';
 
 const skills = [
-  { name: 'React / Next.js', proficiency: 95, icon: Code2, category: 'Frontend' },
+  { name: 'Next.js 15/16', proficiency: 95, icon: Code2, category: 'Frontend' },
+  { name: 'React / Vite', proficiency: 90, icon: Code2, category: 'Frontend' },
   { name: 'TypeScript', proficiency: 90, icon: Code2, category: 'Frontend' },
-  { name: 'Node.js', proficiency: 85, icon: Server, category: 'Backend' },
-  { name: 'Python', proficiency: 80, icon: Code2, category: 'Backend' },
-  { name: 'UI/UX Design', proficiency: 92, icon: Palette, category: 'Design' },
-  { name: 'Figma', proficiency: 88, icon: Figma, category: 'Design' },
-  { name: 'AWS / Cloud', proficiency: 78, icon: Cloud, category: 'DevOps' },
-  { name: 'GraphQL', proficiency: 82, icon: Database, category: 'Backend' },
-  { name: 'Three.js / WebGL', proficiency: 75, icon: Box, category: 'Creative' },
-  { name: 'Motion Design', proficiency: 85, icon: Layers, category: 'Creative' },
+  { name: 'Tailwind CSS', proficiency: 95, icon: Layers, category: 'Design' },
+  { name: 'Supabase / Auth', proficiency: 90, icon: Server, category: 'Backend' },
+  { name: 'PostgreSQL', proficiency: 88, icon: Database, category: 'Backend' },
+  { name: 'Python', proficiency: 80, icon: Code2, category: 'Data' },
+  { name: 'Ethical Hacking', proficiency: 75, icon: Cloud, category: 'Security' },
+  { name: 'Advanced SQL', proficiency: 85, icon: Database, category: 'Backend' },
+  { name: 'Shadcn UI', proficiency: 85, icon: Palette, category: 'Design' },
 ];
 
 function SkillBar({ skill, index }: { skill: typeof skills[0]; index: number }) {
@@ -47,7 +47,7 @@ function SkillBar({ skill, index }: { skill: typeof skills[0]; index: number }) 
         </div>
         <span className="text-white/50 text-sm">{skill.proficiency}%</span>
       </div>
-      
+
       {/* Progress bar */}
       <div className="h-2 bg-white/5 rounded-full overflow-hidden">
         <motion.div
@@ -73,13 +73,13 @@ function SkillCard({ skill, index }: { skill: typeof skills[0]; index: number })
       ref={ref}
       initial={{ opacity: 0, scale: 0.8, rotate: 180 }}
       animate={isInView ? { opacity: 1, scale: 1, rotate: 0 } : {}}
-      transition={{ 
-        duration: 0.6, 
+      transition={{
+        duration: 0.6,
         delay: index * 0.08,
         ease: [0.68, -0.55, 0.265, 1.55]
       }}
-      whileHover={{ 
-        scale: 1.05, 
+      whileHover={{
+        scale: 1.05,
         rotateY: 10,
         z: 30,
         transition: { duration: 0.3 }
@@ -192,7 +192,7 @@ export default function Skills() {
               <SkillBar key={skill.name} skill={skill} index={index} />
             ))}
           </div>
-          
+
           {/* Right column */}
           <div className="space-y-6">
             {skills.slice(5).map((skill, index) => (
@@ -210,7 +210,7 @@ export default function Skills() {
         >
           <p className="text-white/40 text-sm mb-4">Also experienced with</p>
           <div className="flex flex-wrap justify-center gap-3">
-            {['Docker', 'Kubernetes', 'Redis', 'PostgreSQL', 'MongoDB', 'Jest', 'Cypress', 'Storybook'].map((tool) => (
+            {['Cursor', 'Gemini / Claude API', 'Edge Functions', 'RLS Enforcement', 'Data Wrangling', 'Kali Linux', 'Nmap'].map((tool) => (
               <span
                 key={tool}
                 className="px-3 py-1.5 bg-white/5 border border-white/10 rounded-full text-sm text-white/60 hover:border-lime/30 hover:text-lime transition-all duration-300"

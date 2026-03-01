@@ -92,7 +92,7 @@ export default function Hero() {
                 transition={{ duration: 0.8, delay: 0.8, ease: [0.16, 1, 0.3, 1] }}
                 className="text-xl sm:text-2xl text-white/70"
               >
-                Creative Developer & Designer
+                Full-Stack Developer | Entrepreneur
               </motion.p>
             </motion.div>
 
@@ -103,8 +103,8 @@ export default function Hero() {
               transition={{ duration: 0.6, delay: 1 }}
               className="text-base text-white/50 max-w-lg mx-auto lg:mx-0 mb-8 leading-relaxed"
             >
-              I craft digital experiences that blend cutting-edge technology with stunning visual design.
-              From web applications to brand identities, I bring ideas to life.
+              I specialize in building scalable SaaS solutions using Next.js 15/16, Vite, and Supabase,
+              bridging technical innovation with business operations.
             </motion.p>
 
             {/* CTAs */}
