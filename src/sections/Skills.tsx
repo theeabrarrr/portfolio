@@ -6,9 +6,7 @@ import {
   Server,
   Cloud,
   Layers,
-  Box,
   Database,
-  Figma,
 } from 'lucide-react';
 
 const skills = [
